@@ -50,7 +50,7 @@ def run_feed_cost_pipeline():
 
     ration_df = pd.DataFrame({
             "date": list((today_str, today_str, today_str, today_str)),
-            "ration_type": list(("Broiler_Starter", "Broiler_Grower", "Lawyer_Mesh", "Total_Ration")),
+            "ration_type": list(("Broiler_Starter", "Broiler_Grower", "Layer_Mesh", "Total_Ration")),
             "cost_per_ton_usd": list((starter_cost, grower_cost, layer_cost, total_ration_cost)),
         })
 
