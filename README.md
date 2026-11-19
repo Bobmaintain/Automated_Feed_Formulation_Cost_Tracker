@@ -12,7 +12,7 @@ and stores historical price trends in SQL
 
 
 ## What It Does:
-**API Extraction**: Using Python's `requests` library to pull JSON data from external web sources.
+**API Extraction**: Using Python's `urllib.request` library to pull JSON data from external web sources.
 
 
 **Data Transformation:** Parsing nested JSON structures into clean Pandas DataFrame.
