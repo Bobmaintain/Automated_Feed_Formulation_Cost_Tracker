@@ -25,7 +25,7 @@ def run_feed_cost_pipeline():
 
     # Calculate cost for a standard 1-ton Broiler Grower Ration (60% Corn, 30% Soy, 10% Wheat)
     corn_cost = df.loc[df['ingredient'] == 'Yellow Corn', 'price_per_ton_usd'].values[0] * 0.60
-    soy_cost = df.loc[df['ingredient'] == 'Yellow Corn', 'price_per_ton_usd'].values[0] * 0.30
+    soy_cost = df.loc[df['ingredient'] == 'Soybean Meal', 'price_per_ton_usd'].values[0] * 0.30
     wheat_cost = df.loc[df['ingredient'] == 'Wheat Bran', 'price_per_ton_usd'].values[0] * 0.10
     total_ration_cost = round(corn_cost + soy_cost + wheat_cost)
 
